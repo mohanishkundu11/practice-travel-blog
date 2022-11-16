@@ -1,0 +1,302 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h3{
+    text-transform: uppercase;
+    color: orangered;
+}
+
+button{
+    background: orangered;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    float: right;
+    box-shadow: -5px 5px 5px  rgba(182, 181, 181, 0.5);
+}
+
+.card {
+    background: rgb(182, 181, 181);
+    /* min-width 350px; */ 
+    margin: 1opx;
+    min-height: 350px;
+    padding-bottom: 20px;
+    box-shadow: -5px 5px 5px rgba(182, 181, 181, 0.5);
+
+}
+
+
+/* ======== .global-msg ====== */
+
+.global.msg{
+    background-color: rgb(130, 130, 134);
+    color: white;
+}
+
+.top-msg {
+display: flex;
+justify-content: space-between;
+
+}
+
+.icons i {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.header {
+    background: pink;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+.menu ul {
+    list-style-type: none;
+ display: flex;
+ gap: 5px;
+
+}
+
+
+menu ul li {
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+
+.menu ul li:hover{
+    color: blue;
+}
+
+.logo {
+    font-family: "lobster", cursive;
+}
+
+.menu i {
+    display: none;
+}
+
+/* ==============hero====================*/
+
+.hero{
+    min-height: 80vh;
+    background: url(./assets/bg.jpeg) no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    background: black;
+    opacity: 0.7;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px gray;
+}
+
+/* ============ lates post ==============*/ 
+
+.latest-section {
+	margin-top: 60px;
+}
+
+.latest-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.latest {
+	width: 70%;
+}
+
+.latest article{
+    margin-top: 70px;
+}
+
+.post-content {
+    display: flex;
+    flex-direction: row;
+}
+
+h2 {
+	color: rgb(89, 89, 202);
+}
+
+.post-content img {
+	width: 180px;
+	border: 3px solid rgba(190, 187, 187, 0.589);
+	border-radius: 5px;
+	box-shadow: -10px 10px 15px 5px rgba(110, 108, 108, 0.5);
+}
+
+.info {
+	margin: 0 20px;
+}
+
+date {
+	background: rgba(128, 0, 128, 0.472);
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 10px;
+}
+
+/* ======== aside ========== */
+.links {
+    background: rgba(255, 166, 0, 0.3);
+    width: 30%;
+    border-radius: 5px;
+    padding: 32px;
+}
+
+.by-country {
+    margin-top: 64px;
+}
+
+/*======================= rec section ========================*/ 
+.rec {
+    margin-top: 64px;
+}
+
+.rec-content {
+    display: flex;
+    gap: 10px;
+}
+
+.rec-content {
+    width: 100%;
+}
+
+.subscribe{
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto;
+    padding: 40px;
+    
+}
+
+.subcribe input {
+    padding: 10px;
+    border: none;
+    line-height: 20px;
+}
+
+[type="submit"] {
+	background: orangered;
+	border-radius: 5px;
+}
+/* =======footer section ========== */
+.footer {
+	background: rgb(14, 14, 14);
+	padding: 64px 0;
+	color: whitesmoke;
+	text-align: center;
+}
+
+/* Media queries */ 
+
+@media (max-width: 768px) {
+    .meda {
+        height: 62px;
+    }
+    
+    
+    .menu i {
+    display: block;
+    }
+
+    .menu ul {
+		display: none;
+	}
+
+	.latest-content {
+		display: flex;
+		flex-direction: column;
+	}
+	.latest {
+		width: 100%;
+	}
+	.links {
+		width: 100%;
+		margin-top: 48px;
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.by-country {
+		margin-top: 0;
+	}
+
+	.rec-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+@media (max-width: 576px) {
+	.post-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.post-content img {
+		width: 100%;
+		margin-bottom: 32px;
+	}
+
+	.latest article {
+		margin-top: 115px;
+	}
+
+	.links {
+		/* width: 100%;
+		margin-top: 48px; */
+
+		display: flex;
+		flex-direction: column;
+	}
+    
+
+    .subcribe form {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .subcribe form input {
+        margin-bottom: 16px;
+    }
+}
