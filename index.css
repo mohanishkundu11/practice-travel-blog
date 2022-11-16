@@ -35,12 +35,11 @@ button{
 
 .card {
     background: rgb(182, 181, 181);
-    /* min-width 350px; */ 
-    margin: 1opx;
+    min-width :350px; 
+    margin: 10px;
     min-height: 350px;
     padding-bottom: 20px;
     box-shadow: -5px 5px 5px rgba(182, 181, 181, 0.5);
-
 }
 
 
@@ -89,7 +88,8 @@ menu ul li {
 
 
 .menu ul li:hover{
-    color: blue;
+    color: lavender;
+    font-style: italic;
 }
 
 .logo {
@@ -188,10 +188,14 @@ date {
 
 .rec-content {
     display: flex;
+    justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
+    
+   
 }
 
-.rec-content {
+.rec-content img{
     width: 100%;
 }
 
@@ -262,6 +266,7 @@ date {
 	.rec-content {
 		display: flex;
 		flex-direction: column;
+
 	}
 
 }
@@ -298,5 +303,16 @@ date {
 
     .subcribe form input {
         margin-bottom: 16px;
+    }
+
+
+    .card{
+        width: 250px;
+    }
+
+
+    .container{
+        width: 100%;
+        padding: 10px;
     }
 }
